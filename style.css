@@ -1,0 +1,269 @@
+body {
+  box-sizing: border-box;
+  font-family: 'Montserrat', sans-serif;
+}
+
+header nav {  
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem 2rem;
+  background: #fff;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  font-family: Montserrat, sans-serif;
+}
+
+#navbar-taishanfcny-logo {
+  width: 100px;
+  height: auto;
+  cursor: pointer;
+}
+
+header nav ul {
+  list-style: none;
+  display: flex;
+  gap: 1.5rem;
+  margin: 0;
+  padding: 0;
+}
+
+header nav ul li a {
+  text-decoration: none;
+  color: #000;
+  opacity: 0.5;
+  font-weight: 600;
+}
+
+header nav ul li a:hover {
+  color: #143956;
+  opacity: 1;
+}
+
+header nav button {
+  background-color: #fff;
+  color: #143956;
+  border: 2px solid #143956;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+@media (max-width: 750px) {
+  header nav ul {
+    display: none;
+  }
+
+  header nav button {
+    margin-left: auto;
+  }
+}
+
+section{
+  margin-left: calc(2rem + 15px);
+}
+
+#homepage-taishanfcny-team-picture {
+  display: block;
+  width: 80%;
+  max-width: 700px;
+  height: 500px;
+  margin: 0 auto;
+  border-radius: 15px;
+}
+
+#team p {
+  margin: 0.75rem auto 0 auto;
+  max-width: 700px;
+  font: 700 18px 'Montserrat', sans-serif;
+  color: #143956;
+}
+
+#shop ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: stretch;
+  gap: 2rem;
+  padding: 0;
+  margin: 2rem 0;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 1.25rem;
+  
+}
+
+#shop li {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  aspect-ratio: 1/1;
+  border: 3px solid #000;
+  border-radius: 15px;
+  padding: 2rem;
+  width: 200px;
+  background: #fff;
+  padding: 1.25rem;
+  border-radius: 10px;
+}
+
+#shop li h3{
+  margin-bottom: 0 0 1rem 0;
+
+}
+
+#shop li a{
+  display: inline-block;
+  background: #33849b;
+  color: #fff;
+  padding: 0.75rem 1.5rem;
+  border-radius: 900px;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+#shop li a:hover{
+  background: #143956;
+}
+
+@media (max-width: 1024px) {
+  #shop ul {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 600px) {
+  #shop  ul {
+    padding: 0 1.25rem;
+  }
+}
+
+#about p{
+  box-sizing: border-box;
+  border: 2px solid #000;
+  border-radius: 20px;
+  width: calc(100% - 8rem);
+  max-width: 1100px;
+  margin: 1rem auto 0 auto;
+  padding: 1.5rem;
+  color: #000;
+  background: #fff;
+  text-align: justify;
+  line-height: 1.5;
+}
+
+@media (max-width: 1024px) {
+  #about p {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 600px) {
+  #about p {
+    padding: 0 1.25rem;
+  }
+}
+
+form {
+  padding-bottom: 2rem;
+  margin-top: 10px;
+  max-width: 760px;
+}
+
+@media (max-width: 1024px) {
+  form {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 600px) {
+  form {
+    padding: 0 1.25rem;
+  }
+}
+
+label{
+  display: block;
+  color: #000;
+  font-weight: 800;
+  margin-top: 15px;
+  margin-bottom: 8px;
+}
+
+input[type="text"] {
+  box-sizing: border-box;
+  border: 1px solid #888;
+  border-radius: 15px;
+  width: 30%;
+  min-height: 30px;
+  padding: 10px 15px;
+  font-size: 16px;
+  background: #fff;
+}
+
+input[type="email"] {
+  box-sizing: border-box;
+  border: 1px solid #888;
+  border-radius: 15px;
+  width: 50%;
+  min-height: 30px;
+  padding: 10px 15px;
+  font-size: 16px;
+  background: #fff;
+}
+
+textarea {
+  box-sizing: border-box;
+  border: 1px solid #888;
+  border-radius: 15px;
+  width: 90%;
+  min-height: 200px;
+  padding: 10px 15px;
+  background: #fff;
+  resize: none;
+  overflow-y: auto;
+  font-size: 16px;
+  font-family: inherit;
+}
+
+button[type="submit"] {
+  color: #fff;
+  background: #143956;
+  margin-top: 20px; 
+  padding: 0.75rem 1.5rem;
+  border-radius: 8px;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+@media (max-width: 1024px) {
+  #contact_form {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 600px) {
+  #contact_form {
+    padding: 0 1.25rem;
+  }
+}
+
+footer{
+  background: #fff;
+  text-align: center;
+  color: #143956;
+  padding: 25px;
+}
+
+@media (max-width: 1024px) {
+  footer {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 600px) {
+  footer {
+    padding: 0 1.25rem;
+  }
+}
