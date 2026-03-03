@@ -61,7 +61,7 @@ header nav button {
   }
 }
 
-section{
+section {
   margin-left: calc(2rem + 15px);
 }
 
@@ -91,7 +91,6 @@ section{
   margin: 2rem 0;
   grid-template-columns: repeat(5, 1fr);
   gap: 1.25rem;
-  
 }
 
 #shop li {
@@ -110,7 +109,6 @@ section{
 
 #shop li h3{
   margin-bottom: 0 0 1rem 0;
-
 }
 
 #shop li a{
@@ -139,7 +137,7 @@ section{
   }
 }
 
-#about p{
+#about p {
   box-sizing: border-box;
   border: 2px solid #000;
   border-radius: 20px;
@@ -183,7 +181,7 @@ form {
   }
 }
 
-label{
+label {
   display: block;
   color: #000;
   font-weight: 800;
@@ -249,7 +247,7 @@ button[type="submit"] {
   }
 }
 
-footer{
+footer {
   background: #fff;
   text-align: center;
   color: #143956;
